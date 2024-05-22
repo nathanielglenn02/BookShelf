@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             id: +new Date(),
             title: title.value,
             author: author.value,
-            year: year.value,
+            year: parseInt(year.value),
             isComplete: isComplete.checked
         };
         let books = getBooks();
