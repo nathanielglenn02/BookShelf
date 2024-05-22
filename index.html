@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bookshelf</h1>
+        <form id="bookForm">
+            <input type="text" id="title" placeholder="Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="number" id="year" placeholder="Year" required>
+            <label>
+                <input type="checkbox" id="isComplete"> Finished Reading
+            </label>
+            <button type="submit">Add Book</button>
+        </form>
+        <div class="bookshelf">
+            <div class="shelf">
+                <h2>Not Finished Reading</h2>
+                <div id="unfinishedBooks"></div>
+            </div>
+            <div class="shelf">
+                <h2>Finished Reading</h2>
+                <div id="finishedBooks"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
